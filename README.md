@@ -2,10 +2,10 @@
 If you would like to download the project to check it out, please download the zip, unzip it, and run the **index.html**
 
 ## To input data into a spreadsheet
-- Open up the desired spreadsheet and go to **Tools** and click **Script Editor**.
+- Open up the desired spreadsheet and go to `Tools` and click `Script Editor`.
 - Rename the script to Submit Form to Google Sheets.
-- Now, delete the `function myFunction() {}` block within the `Code.gs` tab. In the zip open the **google_sheets_script.txt**, 
-copy the text, then paste it into the google script and go to **File** then **Save**. 
+- Now, delete the `function myFunction() {}` block within the `Code.gs` tab. In the zip open the `google_sheets_script.txt`, 
+copy the text, then paste it into the google script and go to `File` then `Save`. 
 - Next, go to `Run > Run Function > initialSetup` to run this function.
 - In the `Authorization Required` dialog, click on `Review Permissions`.
 - Sign in or pick the Google account associated with this projects.
