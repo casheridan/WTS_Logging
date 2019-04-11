@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <head>
+    <title> Warrior Tech Support: Student Logging </title>
+    <link rel="stylesheet" type="text/css" href="main_css.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <center>
+            <img src="images/brand.png" height="120" width="269">
+          </center>
+          <h1>
+            <a href="index.html">
+              w
+              <img src="images/imgWhite.png" height="23" width="23" alt="a">
+              rrior
+              <span class="logo_colour">_net</span>
+            </a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <div id="form_area">
+      <form name="fromu1" id="submit_to_google_sheet">
+      </br>
+        <div>
+          <label style="font-family: Arial; Color: White; font-size: 15px">Student Name: </label>
+          <select required name="student_name">
+            <option disabled selected value> Student Name </option>
+            <option value="Christian Sheridan">Christian Sheridan</option>
+            <option value="Dawson Haight">Dawson Haight</option>
+            <option value="Mrs.Winterboer">Mrs.Winterboer</option>
+            <option value="Mrs.Heslinga">Mrs.Heslinga</option>
+          </select>
+        </div>
+      </br>
+        <div>
+          <label style="font-family: Arial; Color: White; font-size: 15px">Log:</label>
+        </br>
+          <textarea required name="log" rows="4" cols="50" placeholder="Put what you did today here."/></textarea>
+        </div>
+      </br>
+        <hr>
+      </br>
+        <div>
+          <label style="font-family: Arial; Color: White; font-size: 15px">Chrome #s Student has Worked On: </label>
+          <input required type="text" size="20" name="chromes_worked_on"></input>
+        </div>
+      </br>
+        <div>
+          <label style="font-family: Arial; Color: White; font-size: 15px">Chrome #s ready for Final Inspection: </label>
+          <input required type="text" size="20" name="final_inspection_needed"></input>
+        </div>
+      </br>
+        <div>
+          <button type="submit" id="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyxVClRTyDOee-xSgyceSIe7J6va8kWK1Tsz-r7Cg-pM_ARLcE9/exec'
+      const form = document.forms['submit_to_google_sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) }, form.reset())
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      }, form.reset())
+  </script>
+
+  </body>
+
+
+</html>

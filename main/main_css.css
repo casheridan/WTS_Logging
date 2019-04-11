@@ -1,0 +1,62 @@
+html {
+  background: #FFF url(images/hstech.jpg) no-repeat center fixed;
+  background-position: center top;
+  background-size: 100% 100%;
+  overflow: auto;
+}
+
+img {
+  border: 0;
+}
+
+h1 {
+  font: normal 140% arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #FFF;
+}
+
+#logo {
+  color: #888;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#logo h1 {
+  font: normal 235% 'News Cycle', arial, sans-serif;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 17px #009638;
+}
+
+#form_area {
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 25px;
+  background: transparent url(images/transparent.png);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.button {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: white;
+  color: black;
+  font-weight: bold;
+  background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
+
+.button:hover {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: white;
+  color: black;
+  font-weight: bold;
+  background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#5eb262 100%);
+}
