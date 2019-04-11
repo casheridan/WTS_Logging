@@ -1,5 +1,5 @@
 # Warrior Tech Support Logging System
-If you would like to download the project to check it out, please download the zip, unzip it, and run the **index.html**
+If you would like to download the project to check it out, please download the zip, unzip it, and run the `index.html`
 
 ## To input data into a spreadsheet
 - Open up the desired spreadsheet and go to `Tools` and click `Script Editor`.
