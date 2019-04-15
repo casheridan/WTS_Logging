@@ -29,7 +29,7 @@ copy the text, then paste it into the google script and go to `File` then `Save`
 `Publish > Deploy as web app…` again to get the proper web app URL. 
 It should look something like `https://script.google.com/a/yourdomain.com/macros/s/XXXX…`.
 ## Input your web app URL
-- Open the file named `index.html`. On line 64 replace the current URL in the `''` with your script URL
+- Open the file named `index.html`. On **line 74** replace the current URL in the `''` with your script URL
 ## Setting up your spreadsheet
 In the spreadsheet, for the values you will need are **timestamp**, **student_name**, **log**, **final_inspection_needed**, and **chromes_worked_on** at the top of collumns A - E.
 > IMPORTANT! These are case sensitive and each one needs to be in a seperate cell collumn.
