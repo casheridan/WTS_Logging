@@ -5,6 +5,7 @@
   </head>
 
   <body>
+    <!-- The header contains the warrior_net title and the banner at the top center -->
     <header>
       <div id="logo">
         <div id="logo_text">
@@ -22,6 +23,7 @@
       </br>
         <div>
           <label style="font-family: Arial; Color: White; font-size: 15px">Student Name: </label>
+          <!-- This is the student name, the "name" is what the spreadsheet script is looking for -->
           <select required name="student_name">
             <option disabled selected value> Student Name </option>
             <option value="Jacob Bruner">Jacob Bruner</option>
@@ -49,27 +51,37 @@
         <div>
           <label style="font-family: Arial; Color: White; font-size: 15px">Log:</label>
         </br>
+        <!-- This is the log textarea -->
           <textarea required name="log" rows="4" cols="50" placeholder="Put what you did today here."/></textarea>
         </div>
       </br>
         <hr>
       </br>
         <div>
+          <!-- This is the area for the chromes the student worked on -->
           <label style="font-family: Arial; Color: White; font-size: 15px">Chrome #s Student has Worked On: </label>
           <input required type="text" size="20" name="chromes_worked_on"></input>
         </div>
       </br>
         <div>
+          <!-- This is the area for chromes ready for final inspection -->
           <label style="font-family: Arial; Color: White; font-size: 15px">Chrome #s ready for Final Inspection: </label>
           <input required type="text" size="20" name="final_inspection_needed"></input>
         </div>
       </br>
         <div>
+          <!-- The submit button area -->
           <button type="submit" id="submit" class="button">Submit</button>
         </div>
       </form>
     </div>
 
+    <!--
+    This script is sends the data in the for and also resets the form after submission.
+    The data the script looks for is anything in the "form" with a "name" then the other
+    script on your google sheet will take the incoming data, match the name with a column
+    and put the matching data from the value and put it underneath the matching name column
+    -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyxVClRTyDOee-xSgyceSIe7J6va8kWK1Tsz-r7Cg-pM_ARLcE9/exec'
       const form = document.forms['submit_to_google_sheet']
