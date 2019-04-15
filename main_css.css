@@ -9,11 +9,17 @@ img {
   border: 0;
 }
 
-h1 {
+/*h1 {
   font: normal 140% arial, sans-serif;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
   color: #FFF;
+}
+*/
+
+header {
+  background: transparent;
+  height: 199px;
 }
 
 #logo {
@@ -22,7 +28,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-#logo h1 {
+#logo h1, #logo h2 {
   font: normal 235% 'News Cycle', arial, sans-serif;
   text-transform: none;
   margin: 0;
@@ -33,6 +39,10 @@ h1 {
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px 17px #009638;
+}
+
+#logo_text h1 a, .logo_colour {
+  color: #F2F2F2;
 }
 
 #form_area {
