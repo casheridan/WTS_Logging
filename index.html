@@ -17,6 +17,43 @@
           </h1>
         </div>
       </div>
+      <nav>
+        <!-- <div id="menu_container"> -->
+        <label for="show-menu" class="show-menu">Show Menu</label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul class="sf-menu" id="nav">
+          <li><a href="#">Workorders</a>
+            <ul>
+              <li>
+                <a href="new.php">Submit</a>
+              </li>
+              <li><a href="viewAll.php">View Open</a></li>
+              <li><a href="completed.php">Recently Completed</a></li>
+              <li><a href="#">Search Entries</a>
+                <ul>
+                  <li><a href="search.php">Search All</a></li>
+                  <li><a href="byTechnician.php">By Technician</a></li>
+                  <li><a href="byDates.php">By Date Range</a></li>
+                </ul>
+              </li>
+              <li><a href="stats.php">Stats</a></li>
+            </ul>
+          </li>
+          <li><a href="viewAllLoaner.php">Loaners</a>
+            <ul>
+              <li>
+                <a href="newloaner.php">Submit</a>
+              </li>
+              <li><a href="viewAllLoaner.php">View Open</a></li>
+              <li><a href="completedloaner.php">Loaner History</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="logout.php">Logout</a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
     </header>
     <div id="form_area">
       <form name="fromu1" id="submit_to_google_sheet">
